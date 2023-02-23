@@ -1,0 +1,138 @@
+
+
+
+@media screen and (min-width: 1200px) {
+
+    .container {
+        max-width: 1158px;
+    }
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    /* -------------------HEADER-------------------- */
+    .logo-gap {
+        margin-right: 76px;
+    }
+    
+    .contacts {
+        flex-direction: row;
+        gap: 40px;
+        
+    }
+    .contacts-mail,
+    .contacts-tel{
+        
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    /* -------------------HERO----------------------- */
+    .hero.section {
+        max-width: 1440px;
+        padding-top: 188px;
+        padding-bottom: 188px;
+        background-image: var(--bg-gradient), url(../images/hero-bg-desk.jpg);
+    }
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .hero.section {
+        background-image: var(--bg-gradient), url(../images/hero-bg-desk-2px.jpg);
+            }
+        }
+    .hero-title {
+        margin-bottom: 48px;
+    }
+
+    /* ---------------mision-------------- */
+
+    .picture-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: var(--gap-right-gallery);
+    }
+    
+    .picture-item {
+        width: calc((100%-72px)/4);
+        padding-top: 24px;
+        padding-bottom: 24px;
+        margin-bottom: 8px;
+        background-color: var(--background-button-color);
+        display: flex;
+        justify-content: center;
+    }
+    
+    .mision-list {
+        flex-wrap: nowrap;
+    }
+    .mision-item {
+        width: calc((100%-72px)/4);
+    }
+    
+    .mision-item .title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    .mision-item .text {
+        font-weight: 400;
+    }
+    
+    /* ---------------section-doing---------------- */
+    
+    .section-doing.section {
+        padding-top: 0;
+        display: flex;
+    }   
+    .image {
+        display: flex;
+        gap: var(--gap-right-gallery);
+    }
+    .image-item {
+        max-width: calc((100%-48px)/3);
+    }
+
+    /* -------------------team-------------------- */
+    
+    .team-list {
+        max-width: calc((100%-72px)/4);
+    }
+    
+     /* ----------------------customers---------------- */
+    .customers-item {
+        flex-basis: calc((100%-72px)/4);
+    }
+
+     /* ------------------FOOTER----------------------- */
+
+    .footer>.container{
+        flex-wrap: nowrap;
+    }
+    .footer.section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .footer-box {
+        margin-right: 120px;
+    }
+    .footer-text,
+    .footer-soc-list {
+        margin-bottom: 0;
+    }
+    .footer-soc-media {
+        margin-right: 80px;
+    }
+
+    /* ----------------   PORTFOLIO----------------- */
+    .portfolio.section {
+        padding-top: 96px;
+    }
+    .button {
+        margin-bottom: 72px;
+    }
+    .gallery  .gallery-list {
+        flex-basis: calc((100% - 48px) / 3);
+    }
+}

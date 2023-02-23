@@ -1,0 +1,184 @@
+.portfolio.section {
+    padding-top: 48px;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 16px;
+    margin-bottom: 48px;
+    width: 290px;
+}
+
+.portfolio-btn {
+    padding: 8px 16px;
+}
+
+/* ------------------mob-menu-------------------- */
+
+.menu-header {
+    width: 32px;
+    height: 22px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+    
+}
+.header-icon {
+    stroke: var(--titele-color);
+}
+.close-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-bottom: 16px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--accent-color);
+
+}
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+}
+.no-scroll {
+    overflow: hidden;
+}
+.mob-menu-header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: var(--white-title-color);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.mob-menu-header>.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+}
+.mob-menu-header>.menu-header {
+    width: 24px;
+    height: 24px;
+}
+
+.mob-menu-item:not(:last-child) {
+    margin-bottom: 40px;
+}
+.mob-menu-link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--titele-color);
+    transition: color var(--transition-duration) var(--timing-function);
+}
+.mob-menu-link:hover,
+.mob-menu-link:focus,
+.mob-menu-link.current,
+.mob-contacts-tel:hover,
+.mob-contacts-tel:focus,
+.mob-contacts-mail:hover,
+.mob-contacts-mail:focus {
+    color: var(--button-active-color);
+}
+
+.mob-contacts-tel {
+    display: inline-block;
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: calc(40/36);
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--primary-brand-color);
+
+}
+
+.mob-contacts-mail {
+    display: inline-block;
+    margin-bottom: 48px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24/20);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--body-text-color);
+    transition: color var(--transition-duration) var(--timing-function);
+    
+}
+.mob-soc-list {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+@media screen and (max-width: 479px)  {
+    
+    .modal-close-btn {
+        right: 44px;
+    }
+    .modal-form {
+        width: 90%;
+        height: 90%;
+        margin: 0 auto;
+    }
+
+    .modal-text {
+        font-size: 14px;
+    }
+    .modal-check-desc {
+        font-size: 10px;
+    }   
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        max-width: 426px;
+    }
+}
+
+
+@media screen and (min-width: 480px) {
+    
+    .hero.section {
+        max-width: 480px;
+        padding-top: 112px;
+        padding-bottom: 112px;
+    }
+
+    .hero-title {
+        width: 319px;
+    }
+}
+
+/* @media screen and (max-width: 767px) {
+    .mision-item .text {
+        margin-bottom: 72px;
+    }
+} */
+
+
+
+/* ---------------section-doing---------------- */
+
+.section-doing {
+    display: none;
+}
